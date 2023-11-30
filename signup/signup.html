@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login and Signup form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="Hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="facebookicon10.png">
+                <img src="googleicon09.png">
+                <img src="twittericon10.png">
+            </div>
+            <form id="Login" class="input-group" onsubmit="return loginUser()">
+                <input type="text" id="loginUserId" class="input-field" placeholder="User ID" required>
+                <input type="password" id="loginPassword" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group" onsubmit="return registerUser()">
+                <input type="text" id="registerUserId" class="input-field" placeholder="User ID" required>
+                <input type="email" id="registerEmail" class="input-field" placeholder="Email ID" required>
+                <input type="password" id="registerPassword" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the Terms & Conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>  
+    </div>
+
+<script>
+var x = document.getElementById("Login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
+
+function register(){
+    x.style.left = "-400px"
+    y.style.left = "50px"
+    z.style.left = "110px"
+}
+
+function login(){
+    x.style.left = "50px"
+    y.style.left = "450px"
+    z.style.left = "0px"
+}
+
+function registerUser() {
+    var userId = document.getElementById("registerUserId").value;
+    var email = document.getElementById("registerEmail").value;
+    var password = document.getElementById("registerPassword").value;
+
+    // Save user information to localStorage
+    var user = { userId: userId, email: email, password: password };
+    localStorage.setItem(userId, JSON.stringify(user));
+
+    alert("Registration successful!");
+    return false; // Prevent form submission
+}
+
+function loginUser() {
+    var userId = document.getElementById("loginUserId").value;
+    var password = document.getElementById("loginPassword").value;
+
+    // Retrieve user information from localStorage
+    var storedUser = localStorage.getItem(userId);
+
+    if (storedUser) {
+        var user = JSON.parse(storedUser);
+        if (user.password === password) {
+            alert("Login successful!");
+        } else {
+            alert("Incorrect password!");
+        }
+    } else {
+        alert("User not found. Please register.");
+    }
+
+    return false; // Prevent form submission
+}
+</script>
+
+</body>
+</html>
