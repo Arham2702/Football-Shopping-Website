@@ -42,7 +42,6 @@ body{
     ;   
 }
 
-/* BIG CENTER IMAGE*/
 .hover-container {
     position: relative;
 }
@@ -71,107 +70,8 @@ body{
     opacity: 1;
 }
 
-/* SMALL LEFT IMAGE*/
-.normal-image-container {
-    margin-top: 20px; /* Add top margin to create space below the older image */
-    margin-left: 0; /* Add left margin to position the image towards the left */
-    position: relative;
-}
-
-.hover-image1 {
-    width: auto;
-}
-
-.normal-image-container .hover-text {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 33.3%;
-    height: 100%;       
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 40px;
-}
-
-.normal-image-container .normal-hover-container:hover .hover-text {
-    opacity: 1;
-}
-
-.normal-image-container {
-    margin-top: 21%;
-    position: relative;
-}
-
-.normal-image-container img {
-    width: 33.3%; /* Adjust the width of the new image as needed */
-    height: auto; /* Maintain aspect ratio */
-}
 
 
-/* PRODUCT CARDS*/
-.section-p1 {
-    padding: 40px 80px;
-    margin-top: -15%;
-}
-
-#product1 .pro-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* CART */
-#cart table{
-    width: 100%;
-    border-collapse: collapse;
-    white-space: nowrap;
-}
-
-#cart table td:nth-child(1){
-    width: 100px;
-    text-align: center;
-}
-
-#cart table td:nth-child(2){
-    text-align: center;
-}
-
-#cart table td:nth-child(3){
-    width: 250px;
-    text-align: center;
-}
-
-#cart table td:nth-child(3){
-    text-align: center;
-}
-
-#cart table td:nth-child(4){
-    text-align: center;
-}
-
-#cart table td:nth-child(5){
-    width: 150px;
-    text-align: center;
-}
-
-#cart table td:nth-child(4) input{
-    width: 70px;
-    padding: 10px 5px 10px 15px;
-}
-
-#cart table thead{
-    border: 1px solid #e2e9e1;
-    border-right: none;
-    border-left: none;
-}
-
-#cart table thead td{
-    padding: 18px 0;
-}
 
 
 
@@ -298,29 +198,6 @@ header >* {
     position: absolute;
     left: 4rem;
 }
-
-#search_dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    border: 1px solid #ccc;
-    background-color: #fff;
-}
-
-#search_dropdown a {
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: #333;
-}
-
-
-
-/*--------------------------------------------------------------------------------------------------------*/
-
-
 #right_icon{
     width: 14%;
     display: flex;
