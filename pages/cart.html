@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../main.css" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- MENU BAR -->
+    <header>
+      <div id="logo">
+        <a href="http://127.0.0.1:5500/Shoping%20website/Testwebsite.html#">
+          <img
+            src="../images/ accnt logo.png"
+            alt="brandLogo"
+            id="landingPage"
+            style="width: 130px; height: 110px; margin-left: -15px"
+          />
+        </a>
+      </div>
+      <ul id="nav_bar">
+        <li id="megamenu_container">
+          <a href="http://127.0.0.1:5500/Shoping%20website/fan_version.html"
+            >Fan Version</a
+          >
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/Shoping%20website/master_version.html"
+            >Master Version</a
+          >
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/Shoping%20website/player_version.html#"
+            >Player Version</a
+          >
+        </li>
+      </ul>
+      <div id="search">
+        <input
+          type="text"
+          id="search_bar"
+          placeholder="Search for products, brands and more"
+        />
+        <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        <div id="search_dropdown"></div>
+      </div>
+      <div id="right_icon">
+        <div id="reggDropdown">
+          <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+          <div id="drop">
+            <a
+              href="http://127.0.0.1:5500/Shoping%20website/signup/signup.html"
+              class="dropList"
+              >login</a
+            >
+            <a
+              href="http://127.0.0.1:5500/Shoping%20website/signup/signup.html"
+              class="dropList"
+              >sign up</a
+            >
+          </div>
+
+          <i class="fa-regular fa-user"></i>
+          <span>profile</span>
+        </div>
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          <span>wishlist</span>
+        </div>
+        <div>
+          <a href="http://127.0.0.1:5500/Shoping%20website/cart.html"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+          <span>cart</span>
+        </div>
+      </div>
+
+      <!-- TOGGLE MENU -->
+      <div id="toggle">
+        <i class="bx bx-menu dropbtn" onclick="myFunction()"></i>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="top">
+            <a href="../Homepages/menHomePage.html">men</a>
+            <a href="../Homepages/womenHomePage.html">women</a>
+            <a href="#">kids</a>
+            <a href="../Homepages/homeLiving.html">home & living</a>
+            <a href="#">beauty</a>
+            <a href="#">studio</a>
+          </div>
+          <div class="bottom">
+            <i class="fa-regular fa-user fa_user" id="profile"></i>
+            <i class="fa-regular fa-heart fa_wishlist"></i>
+            <i class="fa-solid fa-bag-shopping fa_cart"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CART -->
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr style="font-size: large; font-weight: bold">
+            <td>IMAGE</td>
+            <td>PRODUCT</td>
+            <td>PRICE</td>
+            <td>QUANTITY</td>
+            <td>SUBTOTAL</td>
+          </tr>
+        </thead>
+        <tbody style="font-size: medium" ;>
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/portugal_playerversion.jpg"
+              />
+            </td>
+            <td>Portugal Home Player version</td>
+            <td>₹1000</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/argentina_playerversion.jpg"
+              />
+            </td>
+            <td>Argentina Home Player version</td>
+            <td>₹1000</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/brazil_playerversion.jpg"
+              />
+            </td>
+            <td>Brazil Home Player version</td>
+            <td>₹1000</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/manutd_masterversion.png"
+              />
+            </td>
+            <td>Manchester United Home Master version</td>
+            <td>₹850</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/barcelona_master_version.png"
+              />
+            </td>
+            <td>Barcelona Home Master version</td>
+            <td>₹850</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/juventus_masterversion.png"
+              />
+            </td>
+            <td>Juventus Home Master version</td>
+            <td>₹850</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/arsenalaway_fanversion.png"
+              />
+            </td>
+            <td>Arsenal Away Fan version</td>
+            <td>₹750</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/arsenal_fanversion.png"
+              />
+            </td>
+            <td>Arsenal Home Fan version</td>
+            <td>₹750</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr class="product-row">
+            <td>
+              <img
+                style="width: 140%; padding: 5%"
+                src="../images/dortmund_fanversion.png"
+              />
+            </td>
+            <td>Dortmund Home Fan version</td>
+            <td>₹750</td>
+            <td><input type="number" value="1" /></td>
+            <td>₹2000</td>
+          </tr>
+
+          <tr
+            style="
+              border: 4px solid #e2e9e1;
+              border-right: none;
+              border-left: none;
+              border-bottom: none;
+            "
+          >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="font-weight: bold; font-size: large; padding: 10px">
+              GRAND TOTAL
+            </td>
+            <td
+              id="grandTotalAmount"
+              style="font-weight: bold; font-size: large; padding: 10px"
+            >
+              ₹2000
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="padding: 10px">
+              <button
+                style="
+                  background-color: #16a59e;
+                  color: rgb(255, 255, 255);
+                  padding: 12px 20px;
+                  font-weight: bold;
+                "
+              >
+                PROCEED TO CHECKOUT
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Function to calculate the subtotal for a given row
+        function calculateSubtotal(row) {
+          const inputElement = row.querySelector('td:nth-child(4) input');
+
+          // Check if input element exists before trying to access its value
+          const quantity = inputElement ? parseInt(inputElement.value) : 0;
+
+          const price = parseFloat(
+            row.querySelector('td:nth-child(3)').textContent.replace('₹', '')
+          );
+
+          // Ensure quantity is greater than or equal to 0
+          const validQuantity = Math.max(0, quantity);
+
+          console.log('Quantity:', validQuantity);
+          console.log('Price:', price);
+
+          return price * validQuantity;
+        }
+
+        // Function to update the total amount and grand total
+        function updateTotals() {
+          let total = 0;
+          const rows = document.querySelectorAll('#cart tbody tr.product-row');
+
+          console.log('Selected Rows:', rows);
+
+          rows.forEach((row) => {
+            const subtotal = calculateSubtotal(row);
+            total += subtotal;
+            row.querySelector(
+              'td:nth-child(5)'
+            ).textContent = `₹${subtotal.toFixed(2)}`;
+          });
+
+          console.log('Total:', total);
+
+          // Display the grand total dynamically
+          const grandTotalAmount = document.getElementById('grandTotalAmount');
+          grandTotalAmount.textContent = `₹${total.toFixed(2)}`;
+        }
+
+        // Event listener for quantity input changes
+        document
+          .querySelectorAll(
+            '#cart tbody tr:not(:last-child) td:nth-child(4) input'
+          )
+          .forEach((input) => {
+            input.addEventListener('input', function () {
+              updateTotals();
+            });
+          });
+
+        // Event listener for the "Proceed to Checkout" button
+        const checkoutButton = document.querySelector('#cart button');
+        checkoutButton.addEventListener('click', function () {
+          alert('Order is booked successfully');
+        });
+
+        // Initial total calculation
+        updateTotals();
+      });
+    </script>
+
+    <script>
+      const searchInput = document.getElementById('search_bar');
+      const searchDropdown = document.getElementById('search_dropdown');
+
+      // Dummy product data (replace with your actual product data)
+      const products = [
+        {
+          name: 'Argentina home player',
+          link: 'http://127.0.0.1:5500/Shoping%20website/player_version.html#'
+        },
+        {
+          name: 'Portugal home player',
+          link: 'http://127.0.0.1:5500/Shoping%20website/player_version.html#'
+        },
+        {
+          name: 'Brazil home player',
+          link: 'http://127.0.0.1:5500/Shoping%20website/player_version.html#'
+        },
+        {
+          name: 'Manchester United home master',
+          link: 'http://127.0.0.1:5500/Shoping%20website/master_version.html#'
+        },
+        {
+          name: 'Barcelona home master',
+          link: 'http://127.0.0.1:5500/Shoping%20website/master_version.html#'
+        },
+        {
+          name: 'Juventus home master',
+          link: 'http://127.0.0.1:5500/Shoping%20website/master_version.html#'
+        },
+        {
+          name: 'Arsenal home fan',
+          link: 'http://127.0.0.1:5500/Shoping%20website/fan_version.html'
+        },
+        {
+          name: 'Arsenal away fan',
+          link: 'http://127.0.0.1:5500/Shoping%20website/fan_version.html'
+        },
+        {
+          name: 'Dortmund home fan',
+          link: 'http://127.0.0.1:5500/Shoping%20website/fan_version.html'
+        }
+      ];
+
+      searchInput.addEventListener('input', function () {
+        const searchTerm = searchInput.value.toLowerCase();
+        const matchedProducts = products.filter((product) =>
+          product.name.toLowerCase().includes(searchTerm)
+        );
+
+        // Update the dropdown with matched products
+        updateDropdown(matchedProducts);
+      });
+
+      function updateDropdown(matchedProducts) {
+        // Clear previous dropdown items
+        searchDropdown.innerHTML = '';
+
+        if (matchedProducts.length > 0) {
+          // Create and append new dropdown items
+          matchedProducts.forEach((product) => {
+            const dropdownItem = document.createElement('a');
+            dropdownItem.textContent = product.name;
+            dropdownItem.href = product.link; // Set the link for each product
+            dropdownItem.addEventListener('click', function (event) {
+              // Handle item selection (you can customize this part)
+              alert(`Selected: ${product.name}`);
+              // Clear search input and dropdown after selection
+              searchInput.value = '';
+              updateDropdown([]);
+            });
+            searchDropdown.appendChild(dropdownItem);
+          });
+
+          // Display the dropdown
+          searchDropdown.style.display = 'block';
+        } else {
+          // Hide the dropdown if no matches
+          searchDropdown.style.display = 'none';
+        }
+      }
+
+      // Close the dropdown when clicking outside the search area
+      document.addEventListener('click', function (event) {
+        if (!event.target.closest('#search')) {
+          searchDropdown.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>

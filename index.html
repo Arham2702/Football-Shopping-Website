@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="teststyles.css" />
+    <link rel="stylesheet" href="../main.css" />
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
@@ -15,9 +15,9 @@
     <!-- MENU BAR -->
     <header>
       <div id="logo">
-        <a href="http://127.0.0.1:5500/Shoping%20website/Testwebsite.html#">
+        <a href="/">
           <img
-            src="Jersey accnt logo.png"
+            src="images/Jersey accnt logo.png"
             alt="brandLogo"
             id="landingPage"
             style="width: 130px; height: 110px; margin-left: -15px"
@@ -26,19 +26,13 @@
       </div>
       <ul id="nav_bar">
         <li id="megamenu_container">
-          <a href="http://127.0.0.1:5500/Shoping%20website/fan_version.html"
-            >Fan Version</a
-          >
+          <a href="pages/fan_version.html">Fan Version</a>
         </li>
         <li>
-          <a href="http://127.0.0.1:5500/Shoping%20website/master_version.html"
-            >Master Version</a
-          >
+          <a href="pages/master_version.html">Master Version</a>
         </li>
         <li>
-          <a href="http://127.0.0.1:5500/Shoping%20website/player_version.html#"
-            >Player Version</a
-          >
+          <a href="pages/player_version.html#">Player Version</a>
         </li>
       </ul>
       <div id="search">
@@ -54,16 +48,8 @@
         <div id="reggDropdown">
           <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
           <div id="drop">
-            <a
-              href="http://127.0.0.1:5500/Shoping%20website/signup/signup.html"
-              class="dropList"
-              >login</a
-            >
-            <a
-              href="http://127.0.0.1:5500/Shoping%20website/signup/signup.html"
-              class="dropList"
-              >sign up</a
-            >
+            <a href="signup/signup.html" class="dropList">login</a>
+            <a href="signup/signup.html" class="dropList">sign up</a>
           </div>
 
           <i class="fa-regular fa-user"></i>
@@ -74,9 +60,7 @@
           <span>wishlist</span>
         </div>
         <div>
-          <a href="http://127.0.0.1:5500/Shoping%20website/cart.html"
-            ><i class="fa-solid fa-bag-shopping"></i
-          ></a>
+          <a href="pages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
           <span>cart</span>
         </div>
       </div>
@@ -104,7 +88,7 @@
 
     <div class="image-container1">
       <div class="hover-container">
-        <img src="1_cropped.jpeg" alt="Image" class="hover-image" />
+        <img src="images/1_cropped.jpeg" alt="Image" class="hover-image" />
         <div class="hover-text">REFERRAL DISCOUNTS</div>
       </div>
     </div>
@@ -112,19 +96,19 @@
     <div class="grid-container">
       <div class="grid-item">
         <div class="hover-container">
-          <img src="6.jpeg" alt="Normal Image" class="grid-item-image" />
+          <img src="images/6.jpeg" alt="Normal Image" class="grid-item-image" />
           <div class="hover-text">ABOUT JERSEYS</div>
         </div>
       </div>
       <div class="grid-item">
         <div class="hover-container">
-          <img src="6.jpeg" alt="Normal Image" class="grid-item-image" />
+          <img src="images/6.jpeg" alt="Normal Image" class="grid-item-image" />
           <div class="hover-text">SHIPPING PROCESS</div>
         </div>
       </div>
       <div class="grid-item">
         <div class="hover-container">
-          <img src="6.jpeg" alt="Normal Image" class="grid-item-image" />
+          <img src="images/6.jpeg" alt="Normal Image" class="grid-item-image" />
           <div class="hover-text">REFUND & EXCHANGE</div>
         </div>
       </div>
@@ -138,39 +122,39 @@
     const products = [
       {
         name: 'Argentina home player',
-        link: 'http://127.0.0.1:5500/Shoping%20website/player_version.html#'
+        link: 'pages/player_version.html#'
       },
       {
         name: 'Portugal home player',
-        link: 'http://127.0.0.1:5500/Shoping%20website/player_version.html#'
+        link: 'pages/player_version.html#'
       },
       {
         name: 'Brazil home player',
-        link: 'http://127.0.0.1:5500/Shoping%20website/player_version.html#'
+        link: 'pages/player_version.html#'
       },
       {
         name: 'Manchester United home master',
-        link: 'http://127.0.0.1:5500/Shoping%20website/master_version.html#'
+        link: 'pages/master_version.html#'
       },
       {
         name: 'Barcelona home master',
-        link: 'http://127.0.0.1:5500/Shoping%20website/master_version.html#'
+        link: 'pages/master_version.html#'
       },
       {
         name: 'Juventus home master',
-        link: 'http://127.0.0.1:5500/Shoping%20website/master_version.html#'
+        link: 'pages/master_version.html#'
       },
       {
         name: 'Arsenal home fan',
-        link: 'http://127.0.0.1:5500/Shoping%20website/fan_version.html'
+        link: 'pages/fan_version.html'
       },
       {
         name: 'Arsenal away fan',
-        link: 'http://127.0.0.1:5500/Shoping%20website/fan_version.html'
+        link: 'pages/fan_version.html'
       },
       {
         name: 'Dortmund home fan',
-        link: 'http://127.0.0.1:5500/Shoping%20website/fan_version.html'
+        link: 'pages/fan_version.html'
       }
     ];
 

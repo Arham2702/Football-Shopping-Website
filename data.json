@@ -1,8 +1,0 @@
-{
-    "register": [
-      { "id": 1, "emaild": "json-server", "password": "typicode" }
-    ],
-    "login": [
-      { "id": 1, "emaild": "some comment", "password": 1 }
-    ]
-  }
