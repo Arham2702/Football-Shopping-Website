@@ -11,7 +11,7 @@
 body {
   font-family: var(--primaryFont);
   scroll-behavior: smooth;
-0%}
+}
 
 .grid-container {
   display: grid;
@@ -33,7 +33,7 @@ body {
   position: absolute;
   bottom: 0;
 }
-.grid-item-image{
+.grid-item-image {
   width: 100%;
 }
 
